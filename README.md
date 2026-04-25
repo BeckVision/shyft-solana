@@ -4,6 +4,15 @@ A Python client for the [Shyft API](https://shyft.to/) on Solana. Fetch transact
 
 Works on the **free tier**. No paid plan required.
 
+## Repository Status
+
+This public repository currently contains the project documentation and design notes for the client. Package source and release automation should be added before publishing or advertising the `pip install` path.
+
+Related notes:
+
+- [API_EXPLORATION.md](API_EXPLORATION.md)
+- [KEY_POOL_DESIGN.md](KEY_POOL_DESIGN.md)
+
 ## Features
 
 - **REST + RPC** in one client — transaction history, token supply, signature lookups
@@ -17,6 +26,8 @@ Works on the **free tier**. No paid plan required.
 
 ## Installation
 
+> The package install path below is the intended public interface. Add the package source and PyPI release before treating it as generally available.
+
 ```bash
 pip install shyft-solana
 ```
@@ -24,7 +35,7 @@ pip install shyft-solana
 Or install from source:
 
 ```bash
-git clone https://github.com/yourname/shyft-solana.git
+git clone https://github.com/BeckVision/shyft-solana.git
 cd shyft-solana
 pip install -e .
 ```
@@ -326,6 +337,14 @@ The client automatically retries on:
 - **5xx** (server error) — up to `max_retries` attempts
 - **Network errors** — connection timeouts, DNS failures
 
+## Testing
+
+Planned package test entrypoint:
+
+```bash
+pytest
+```
+
 ## License
 
-MIT
+MIT. See [LICENSE](LICENSE).
