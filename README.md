@@ -6,7 +6,7 @@ Works on the **free tier**. No paid plan required.
 
 ## Repository Status
 
-This public repository currently contains the project documentation and design notes for the client. Package source and release automation should be added before publishing or advertising the `pip install` path.
+This repository now contains an installable first-pass client package plus the original API exploration notes. The client API is intentionally small and test-covered; parser coverage will expand as more real Shyft payloads are captured.
 
 Related notes:
 
@@ -26,18 +26,18 @@ Related notes:
 
 ## Installation
 
-> The package install path below is the intended public interface. Add the package source and PyPI release before treating it as generally available.
-
-```bash
-pip install shyft-solana
-```
-
-Or install from source:
+PyPI release is planned. Until then, install from source:
 
 ```bash
 git clone https://github.com/BeckVision/shyft-solana.git
 cd shyft-solana
 pip install -e .
+```
+
+Once published to PyPI:
+
+```bash
+pip install shyft-solana
 ```
 
 ## Quick Start
@@ -339,7 +339,7 @@ The client automatically retries on:
 
 ## Testing
 
-Planned package test entrypoint:
+Run the test suite with:
 
 ```bash
 pytest
