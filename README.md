@@ -1,5 +1,7 @@
 # shyft-solana
 
+[![CI](https://github.com/BeckVision/shyft-solana/actions/workflows/ci.yml/badge.svg)](https://github.com/BeckVision/shyft-solana/actions/workflows/ci.yml)
+
 A Python client for the [Shyft API](https://shyft.to/) on Solana. Fetch transactions, parse trades, build OHLCV candles, and query RPC — with built-in batching, async support, and multi-key rotation.
 
 Works on the **free tier**. No paid plan required.
